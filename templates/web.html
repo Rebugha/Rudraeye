@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudra Vision Clinic</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+             /* light blue background */
+        }
+        
+        h1 {
+            align-items: center;
+            color: orange;
+            margin-left: 1px;
+            margin-bottom: 0px;
+            font-size: 50px; /* increased font size */
+        }
+        h2 {
+            align-items: right;
+            color: black;
+            margin-left:20px;
+            margin-right: 30px;
+            margin-top: 0px;
+            font-size: 25px; /* increased font size */
+        }
+        img.logo {
+            width: 150px; /* adjust size as needed */
+            margin-left: 10px;
+            margin right:0px;
+            margin-bottom: 10px;
+        }
+        .form-section {
+            margin-top: 20px;
+            align-items: left;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .carousel img {
+            width: 200px;
+            display: block;
+            position: absolute;
+            margin-top: 100px;
+            left: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+
+  
+    
+    <div class="container">
+        <img src="static/Logo1.webp" alt="Logo" class="logo">
+    <div class="text-block">
+        <h1>Rudra Vision Clinic&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clarity.Care.Confidence&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+    </div>
+    <div class="form-section">
+                    <form action="/register" method="post">           
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="text" name="contact" placeholder="Enter your contact number" required>
+                        <button onclick="sendWhatsAppMessage()">Book Appointment</button>
+                    </form>
+                </div>
+    
+    <div class="carousel">
+                        <img src="{{ url_for('static', filename='Frame1.webp') }}" alt="Slide 1">
+                        <!--<img src="{{ url_for('static', filename='Logo1.webp') }}" alt="Slide 2">
+                        <img src="{{ url_for('static', filename='Frame2.webp') }}" alt="Slide 3"> -->
+                </div>
+   
+</body>
+</html>
+
