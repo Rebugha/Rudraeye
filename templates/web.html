@@ -69,9 +69,14 @@
                     <form action="/register" method="post">           
                         <input type="text" name="name" placeholder="Enter your name" required>
                         <input type="text" name="contact" placeholder="Enter your contact number" required>
-                        <button onclick="sendWhatsAppMessage()">Book Appointment</button>
+                        <button type="register">Book Appointment</button>
                     </form>
                 </div>
+    {% if success == 'true' %}
+    <script>
+        alert("Your appointment is registered successfully!");
+    </script>
+    {% endif %}
     
     <div class="carousel">
                         <img src="{{ url_for('static', filename='Frame1.webp') }}" alt="Slide 1">
