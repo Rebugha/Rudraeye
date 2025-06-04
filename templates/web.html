@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rudra Vision Clinic</title>
@@ -13,43 +14,74 @@
             background-color: whitesmoke;
              /* light blue background */
         }
-        
-        h1 {
+         .container {
+            display: flex;
             align-items: center;
+            gap: 20px; /* Space between logo and text */
+            padding: 20px;
+        }
+        .top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            }
+
+        .contact-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-button:hover {
+        background-color: lightgreen;
+        }
+
+        h1 {
+            font-size: 48px;
             color: orange;
-            margin-left: 1px;
-            margin-bottom: 0px;
-            font-size: 50px; /* increased font size */
+            margin: 0; /* increased font size */
         }
         h2 {
-            align-items: right;
+            font-size: 24px;
+            font-weight: bold;
             color: black;
-            margin-left:20px;
-            margin-right: 30px;
-            margin-top: 0px;
-            font-size: 25px; /* increased font size */
+            margin: 5px 0 0 0; /* increased font size */
         }
         img.logo {
             width: 150px; /* adjust size as needed */
-            margin-left: 10px;
+            margin-left: -100px;
             margin right:0px;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
         }
         .form-section {
             margin-top: 20px;
             align-items: left;
         }
-        .container {
+       
+        .scroll-gallery {
             display: flex;
             align-items: center;
+            justify-content: left;
+            overflow-x: auto;
+            gap: 16px;
+            padding: 10px;
+            scroll-snap-type: x mandatory;
+            margin-top: 00px;
+            margin-left:0px;
         }
 
-        .carousel img {
-            width: 200px;
-            display: block;
-            position: absolute;
-            margin-top: 100px;
-            left: 0;
+         .scroll-gallery img {
+            margin-top: 0px;
+            align-items: center;
+            flex-shrink: 0;
+            flex: 0 0 auto;
+            width: 300px;
+            height: auto;
+            scroll-snap-align: start;
+            border-radius: 10px;
         }
 
 
@@ -60,29 +92,37 @@
   
     
     <div class="container">
-        <img src="static/Logo1.webp" alt="Logo" class="logo">
-    <div class="text-block">
-        <h1>Rudra Vision Clinic&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clarity.Care.Confidence&nbsp;&nbsp;&nbsp;&nbsp;</h2>
-    </div>
+        <div class="logo">
+            <img src="static/Logo1.webp" alt="Logo" class="logo">
+        </div>
+        <div class="text-block">
+            <h1>Rudra Vision Clinic&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clarity.Care.Confidence&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+        </div>
+        </div>
     <div class="form-section">
                     <form action="/register" method="post">           
                         <input type="text" name="name" placeholder="Enter your name" required>
                         <input type="text" name="contact" placeholder="Enter your contact number" required>
                         <button type="register">Book Appointment</button>
                     </form>
-                </div>
+
     {% if success == 'true' %}
     <script>
         alert("Your appointment is registered successfully!");
+         window.history.replaceState(null, null, window.location.pathname);
     </script>
     {% endif %}
-    
-    <div class="carousel">
-                        <img src="{{ url_for('static', filename='Frame1.webp') }}" alt="Slide 1">
-                        <!--<img src="{{ url_for('static', filename='Logo1.webp') }}" alt="Slide 2">
-                        <img src="{{ url_for('static', filename='Frame2.webp') }}" alt="Slide 3"> -->
-                </div>
+    </div>
+    <div class="scroll-gallery">
+        <img src="static/Frame4.jpg" alt="Image 1">
+        <img src="static/Frame2.webp" alt="Image 2">
+        <img src="static/Frame3.jpg" alt="Image 3">
+        <img src="static/Frame1.webp" alt="Image 4">
+    </div>
+    <!--<div class="top-right">
+        <button class="contact-button">📞 Contact Us</button>
+    </div>-->
    
 </body>
 </html>
