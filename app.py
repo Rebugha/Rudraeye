@@ -13,10 +13,15 @@ def home():
 def register():
     name = request.form['name']
     contact = request.form['contact']
+    email = request.form['email']
+    date = request.form['date']
+    time = request.form['time']
+    
+
 
     with open('contacts.csv', 'a', newline='') as file :
         writer = csv.writer(file)
-        writer.writerow([name, contact])
+        writer.writerow([name, contact,email, date, time])
 
 
     return redirect(url_for('home', success='true'))

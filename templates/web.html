@@ -19,6 +19,7 @@
             align-items: center;
             gap: 20px; /* Space between logo and text */
             padding: 20px;
+            
         }
         .top-right {
             position: absolute;
@@ -45,15 +46,15 @@
             margin: 0; /* increased font size */
         }
         h2 {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
-            color: black;
+            color: orange;
             margin: 5px 0 0 0; /* increased font size */
         }
         h3 {
-            font-size: 24px;
+            font-size: 35px;
             font-weight: bold;
-            color: black;
+            color: orange;
             margin: 0px 0 0 0; /* increased font size */
         }
         img.logo {
@@ -90,6 +91,34 @@
             border-radius: 10px;
         }
 
+         .right-align {
+            text-align: right;
+        }
+         .left-align {
+            text-align: left;
+            margin-top: 20px;
+        }
+         .center-align {
+            text-align: center;
+            margin-top: 20px;
+        }
+         .contact-block {
+            background-color:lightgray;
+            align-items: center;
+            color: black;
+            padding: 20px;
+            width: 1250px;
+            margin-left: 0px;
+            border-radius: 30px;
+            border-color: lightgray;    
+            border-style: solid;
+            font-family: Arial, sans-serif;
+        }
+        
+        
+      
+   
+
 
     </style>
 </head>
@@ -102,7 +131,7 @@
             <img src="static/Logo1.webp" alt="Logo" class="logo">
         </div>
         <div class="text-block">
-            <h1>Rudra Vision Clinic&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+            <h1>Rudra Vision&nbsp;&nbsp;&nbsp;&nbsp;</h1>
             <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clarity.Care.Confidence&nbsp;&nbsp;&nbsp;&nbsp;</h2>
         </div>
         </div>
@@ -110,6 +139,10 @@
                     <form action="/register" method="post">           
                         <input type="text" name="name" placeholder="Enter your name" required>
                         <input type="text" name="contact" placeholder="Enter your contact number" required>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <input type="date" name="date" placeholder="Select date" required>
+                        <input type="time" name="time" placeholder="Select time" required>
+
                         <button type="register">Book Appointment</button>
                     </form>
 
@@ -129,10 +162,25 @@
     <div class="container">
       <h3>About Us</h3>
       <p>Rudra Vision Clinic is dedicated to providing exceptional eye care services. Our team of experienced professionals is committed to ensuring the health and well-being of your eyes. We offer a wide range of services, including comprehensive eye exams, contact lens fittings, and treatment for various eye conditions.</p>
+    </div>
+      <div class="contact-block" >
+      <div class="center-align" >
+      <h3>Contact Details </h3>
       </div>
-    <!--<div class="top-right">
-        <button class="contact-button"> Contact Us</button>
-    </div>-->
+      <div class="right-align" >
+        <p style="font-size: 20px;"><strong>Available Time:</strong> 
+        <p style="font-size: 20px;"> Monday :9:00 AM – 6:00 PM <br>Tuesday :9:00 AM – 6:00 PM<br>Wednesday :9:00 AM – 6:00 PM 
+        <br>Thursday :9:00 AM – 6:00 PM <br>Friday :9:00 AM – 6:00 PM <br>Saturday :9:00 AM – 6:00 PM <br>Sunday :9:00 AM – 6:00 PM</p>
+        </div>
+      <div class="left-align" >
+        <p style="font-size: 20px;"><strong>Phone:</strong> +91 12345 67890 <br> 
+        <strong>Email:</strong>  rudraeye@gmail.com <br
+        style="font-size: 20px;"><strong>Address:</strong> No. 123, Anna Salai, Chennai, Tamil Nadu, India - 600002</p>
+        </div>
+        </div>
+    </div>
+    
+   
    
 </body>
 </html>
