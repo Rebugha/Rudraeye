@@ -8,6 +8,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Rudra Vision Clinic</title>
     <style>
         body {
@@ -19,7 +20,7 @@
             align-items: center;
             gap: 20px; /* Space between logo and text */
             padding: 20px;
-            
+            https://maps.app.goo.gl/oRSR4BZqay5F4DJc7
         }
         .top-right {
             position: absolute;
@@ -42,19 +43,19 @@
 
         h1 {
             font-size: 48px;
-            color: orange;
+            color: #e65c00;
             margin: 0; /* increased font size */
         }
         h2 {
             font-size: 28px;
             font-weight: bold;
-            color: orange;
+            color: black;
             margin: 5px 0 0 0; /* increased font size */
         }
         h3 {
             font-size: 35px;
             font-weight: bold;
-            color: orange;
+            color: #e65c00;
             margin: 0px 0 0 0; /* increased font size */
         }
         img.logo {
@@ -64,6 +65,7 @@
             margin-bottom: 0px;
         }
         .form-section {
+            font-size: 20px;
             margin-top: 20px;
             align-items: left;
         }
@@ -76,7 +78,7 @@
             gap: 16px;
             padding: 10px;
             scroll-snap-type: x mandatory;
-            margin-top: 00px;
+            margin-top: 50px;
             margin-left:0px;
         }
 
@@ -85,8 +87,8 @@
             align-items: center;
             flex-shrink: 0;
             flex: 0 0 auto;
-            width: 300px;
-            height: auto;
+            width: 400px;
+            height: 400px;
             scroll-snap-align: start;
             border-radius: 10px;
         }
@@ -103,7 +105,7 @@
             margin-top: 20px;
         }
          .contact-block {
-            background-color:lightgray;
+            background-color: rgb(223, 240, 244);
             align-items: center;
             color: black;
             padding: 20px;
@@ -114,8 +116,88 @@
             border-style: solid;
             font-family: Arial, sans-serif;
         }
-        
-        
+         .content-block {
+            background-color: rgb(12, 20, 78);
+            align-items: center;
+            color: black;
+            padding: 20px;
+            width: 1250px;
+            margin-left: 0px;
+            border-radius: 30px;
+            border-color: lightgray;    
+            border-style: solid;
+            font-family: Arial, sans-serif;
+        }
+        .dropdown-container {
+            display: flex;
+            gap: 5px; /* space between dropdowns */
+            padding: 15px;
+            display: flex;
+            justify-content: right; /* left the dropdowns */
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown button */
+        .dropbtn {
+        background-color: #ff6600;
+        color: white;
+        padding: 10px 15px;
+        font-size: 20px;
+        border: 5px solid #ff6600;
+        cursor: pointer;
+        border-radius: 5px;
+        }
+
+        /* Dropdown content */
+    
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: 1px solid  #ff6600;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(180, 18, 18, 0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: black;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        border: 1px solidrgb(237, 9, 9);
+        }
+
+        .dropdown-content a:hover {
+        background-color:#ff6600;
+        }
+
+        /* Show the dropdown on hover */
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+        background-color:#ff6600;
+        }
+        .top-bar {
+        background-color:rgb(12, 20, 78); /* Orange color */
+        color: white;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        }
+        .top-bar .left,
+        .top-bar .right {
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        }
       
    
 
@@ -124,7 +206,17 @@
 </head>
 <body>
 
-  
+    <div class="top-bar">
+    <div class="left">
+      📞 <span style="font-size: 16px"> call: +91 9789992145 | 7299949280</span>
+    </div>
+    <div class="left">
+      📍 ✉️ <span style="font-size: 16px"> Email:rudraeye@gmail.com</span>
+    </div>
+    <div class="right">
+      📍 <span style="font-size: 16px"> Address: Plot #4, Thiraviyam Nagar,1st Street,Sai Nagar,Porur,Chennai-600116</span>
+    </div>
+  </div>
     
     <div class="container">
         <div class="logo">
@@ -135,6 +227,55 @@
             <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clarity.Care.Confidence&nbsp;&nbsp;&nbsp;&nbsp;</h2>
         </div>
         </div>
+    <div class="dropdown-container">
+        <div class="dropdown">
+            <button class="dropbtn" right-align>About us</button>
+            <div class="dropdown-content">
+                <a href="#about">About us </a>
+                </div>
+            </div>
+        <div class="dropdown">
+            <button class="dropbtn">Frames & Lenses</button>
+            <div class="dropdown-content">
+                <a href="#">Progressive</a>
+                <a href="#">Sunglasses</a>
+                <a href="#">Zero-Power lens</a>
+                </div>
+            </div>
+        <div class="dropdown">
+            <button class="dropbtn">Treatments</button>
+            <div class="dropdown-content">
+                <a href="#Dry-eye and glaucoma">Dry-eye and glaucoma</a>
+                <a href="#Low-vision-aids">Low-vision-aids</a>
+                <a href="#Pediatric-Optometry">Pediatric-Optometry</a>
+                <a href="#Neuro-Optometry">Neuro-Optometry</a>
+                <a href="#Low-vision optometry">Vision-therapy for special children</a>
+                </div>
+            </div>
+        <div class="dropdown">
+            <button class="dropbtn">Consultation</button>
+            <div class="dropdown-content">
+                <a href="#consultation">B M S DEEPA BS,MPhil(Optometry),PhD</a>
+            </div>
+            </div>
+         <div class="dropdown">
+            <button class="dropbtn">Contact us</button>
+            <div class="dropdown-content">
+                <a href="#contact">contact</a>
+            </div>
+            </div>
+         <div class="dropdown">
+            <button class="dropbtn">Track Order</button>
+            <div class="dropdown-content">
+                <a href="#contact">contact</a>
+            </div>
+            </div>
+        </div>
+    
+  
+
+    </div>
+
     <div class="form-section">
                     <form action="/register" method="post">           
                         <input type="text" name="name" placeholder="Enter your name" required>
@@ -153,31 +294,87 @@
     </script>
     {% endif %}
     </div>
+    
     <div class="scroll-gallery">
-        <img src="static/Eye1.jpg" alt="Image 1">
-        <img src="static/Eye2.jpg" alt="Image 2">
-        <img src="static/Eye3.jpg" alt="Image 3">
-        <img src="static/Eye5.jpg" alt="Image 4">
+        <img src="static/Eye5.jpg" alt="Image 1">
+        <img src="static/Eye3.jpg" alt="Image 2">
+        <img src="static/Eye2.jpg" alt="Image 3">
+        <img src="static/Eye1.jpg" alt="Image 4">
     </div>
-    <div class="container">
-      <h3>About Us</h3>
-      <p>Rudra Vision Clinic is dedicated to providing exceptional eye care services. Our team of experienced professionals is committed to ensuring the health and well-being of your eyes. We offer a wide range of services, including comprehensive eye exams, contact lens fittings, and treatment for various eye conditions.</p>
+
+     <section style="width: 80%; margin: 0 auto; text-align: left;" id="about">
+        <h2 style="color: #ff6600;font-size: 35px">About Us</h2>
+        <p style="font-size: 20px;text-align: center;">Rudra Vision Clinic is dedicated to providing exceptional eye care services. Our team of experienced professionals is committed to ensuring the health and well-being of your eyes. We offer a wide range of services, including comprehensive eye exams, contact lens fittings, and treatment for various eye conditions.<br>
+            <ul style="font-size: 20px;text-align: left;">
+                <li>Perform eye exams and vision tests</li>
+                <li>Diagnose and manage eye diseases and conditions</li>
+                <li>Prescribe and fit eyeglasses and contact lenses</li>
+                <li>Monitor eye conditions related to diseases like diabetes</li>
+                <li>Manage and treat conditions like dry eye and glaucoma</li>
+                <li>Provide low-vision aids and vision therapy</li>
+            </ul>
+        </section> 
+    <div class="contact-block" >
+ 
+        <section style="width: 80%; margin: 5px auto; text-align: left;" id="Dry-eye and glaucoma">
+            <h2 >Dry-eye and glaucoma</h2>
+            <p style="font-size: 15px;color: black;text-align: left;">We provide specialized care for dry eye syndrome and glaucoma, ensuring your eyes remain healthy and comfortable.</p>
+        </section>
+        </div>
+        <section style="width: 80%; margin: 0 auto; text-align: right;" id="Low-vision-aids">
+            <h2>Low-vision-aids</h2>
+            <p>Our low-vision aids help individuals with visual impairments enhance their quality of life through specialized devices and support.</p>
+        </section>
+        <div class="contact-block" >
+        <section style="width: 80%; margin: 0 auto; text-align: left;" id="Pediatric-Optometry">
+            <h2>Pediatric-Optometry</h2>
+            <p>At Rudra Vision Clinic, we understand the unique eye care needs of children. Our Pediatric Optometry services include comprehensive eye exams, vision therapy, and specialized treatments to ensure your child's visual development is on track.</p>
+        </section>
+        </div>
+        <section style="width: 80%; margin: 0 auto; text-align: right;" id="Neuro-Optometry">
+            <h2>Neuro-Optometry</h2>
+            <p>If you have vision problems that result from a brain injury, this is the type of optometrist you might visit.</p>
+        </section>
+        <div class="contact-block" >
+        <section style="width: 80%; margin: 0 auto; text-align: left;" id="Low-vision optometry">
+            <h2>Low-vision optometry</h2>
+            <p>If you have low vision—that means you can't see well enough to perform your daily activities and your sight can't be corrected by glasses or contact lenses, medicine, or surgery—low-vision optometrists offer devices and strategies that can improve your quality of life.</p>
+        </section>
+        </div>
+
+        <div class="content-block" >
+        <section style="width: 100%; margin: 0 auto; text-align: center;" id="consultation">
+            <h2 style="color: white;font-size:30px">Consulation:</h2>
+                <p style="font-size:35px;color: orange;">B M S DEEPA,<span style="font-size:25px;color: white">BS,MPhil(Optometry),PhD <br> Consultant Optometrist,VP-OATN</span></p>
+                <p style="font-size: 25px;color: white;text-align: right;"><strong>Consulation Time:</strong> 
+        <p style="font-size: 20px;color: white;text-align: right;">Monday to Saturday: 4:00 PM – 9:00 PM <br>Sunday: 9:00 AM – 9:00 PM</p>
+        </section>
+        </div>
+
+        
     </div>
-      <div class="contact-block" >
+
+
       <div class="center-align" >
       <h3>Contact Details </h3>
       </div>
       <div class="right-align" >
-        <p style="font-size: 20px;"><strong>Available Time:</strong> 
-        <p style="font-size: 20px;"> Monday :9:00 AM – 6:00 PM <br>Tuesday :9:00 AM – 6:00 PM<br>Wednesday :9:00 AM – 6:00 PM 
-        <br>Thursday :9:00 AM – 6:00 PM <br>Friday :9:00 AM – 6:00 PM <br>Saturday :9:00 AM – 6:00 PM <br>Sunday :9:00 AM – 6:00 PM</p>
+        <p style="font-size: 25px;"><strong style="color:#ff6600" >Opening Hours:</strong> 
+        <p style="font-size: 20px;"> Monday :9:00 AM – 9:00 PM <br>Tuesday :9:00 AM – 9:00 PM<br>Wednesday :9:00 AM – 9:00 PM 
+        <br>Thursday :9:00 AM – 9:00 PM <br>Friday :9:00 AM – 9:00 PM <br>Saturday :9:00 AM – 9:00 PM <br>Sunday :9:00 AM – 9:00 PM</p>
         </div>
-      <div class="left-align" >
-        <p style="font-size: 20px;"><strong>Phone:</strong> +91 12345 67890 <br> 
-        <strong>Email:</strong>  rudraeye@gmail.com <br
-        style="font-size: 20px;"><strong>Address:</strong> No. 123, Anna Salai, Chennai, Tamil Nadu, India - 600002</p>
-        </div>
-        </div>
+        <section style="width: 80%; margin: 5 auto; text-align:left;" id="contact">
+            <h2 style="color:#ff6600">Contact : </h2>
+            <p style="font-size: 20px;"><strong>Phone:</strong> +91 9789992145 | 7299949280 <br> 
+            <strong>Email:</strong>  rudraeye@gmail.com <br>
+            <strong>Address:</strong> Plot #4, Thiraviyam Nagar,1st Street,Sai Nagar,Porur,Chennai-600116<br>(inside YAZH AESTHETIC CENTRE)</p>
+                <a href="https://maps.app.goo.gl/oRSR4BZqay5F4DJc7" target="_blank" style="font-size: 20px;">
+                    <strong style="font-size: 25px;">Location:</strong>
+                📍 On Google-map
+                    
+                </map>
+                </a>
+        </section>
     </div>
     
    
