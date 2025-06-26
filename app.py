@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     success = request.args.get('success')
-    return render_template('web.html', success=success)
+    return render_template('index.html', success=success)
 
 @app.route('/register', methods=['POST'])
 def register():
@@ -34,8 +34,8 @@ images = ['Frame1.webp', 'Frame2.webp', 'frame3.webp']
 @app.route('/')
 def image():
     selected_image = random.choice(images)
-    image_url = url_for('static', filename=selected_image)
-    return render_template('web.html', image_url=image_url)
+    image_url = url_for('images', filename=selected_image)
+    return render_template('index.html', image_url=image_url)
 
 
 if __name__ == '__main__':
